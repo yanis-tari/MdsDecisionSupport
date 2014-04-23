@@ -4,40 +4,4 @@
 <property name="name" value="decisionsupport.Test-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="0" name="patient_adress" type="InputTextBigInteger" id="1318021174">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;adress (patient)quot;"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/adress"/>
-<property name="fieldClass" value="java.math.BigInteger"/>
-</field>
-<field position="1" name="patient_email" type="InputText" id="1616361993">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;email (patient)quot;"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/email"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="2" name="patient_firstName" type="InputText" id="289901684">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;firstName (patient)quot;"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/firstName"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="3" name="patient_lastName" type="InputText" id="1609992047">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;lastName (patient)quot;"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/lastName"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="4" name="patient_phoneNumber" type="InputText" id="60721468">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;phoneNumber (patient)quot;"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/phoneNumber"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<dataHolder inputId="" name="#0000A0" type="dataModelerEntry" outId="patient" value="com.mds.decisionsupport.model.PatientImpl" id="patient"/>
 </form>
