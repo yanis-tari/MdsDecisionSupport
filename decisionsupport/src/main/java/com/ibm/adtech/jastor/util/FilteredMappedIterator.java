@@ -12,6 +12,7 @@ import com.hp.hpl.jena.util.iterator.ClosableIterator;
  *         href="mailto:bhszekel@us.ibm.com">bhszekel@us.ibm.com </a>)
  *  
  */
+@SuppressWarnings("rawtypes")
 public abstract class FilteredMappedIterator implements ClosableIterator {
 
     Iterator src;

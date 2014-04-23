@@ -24,6 +24,7 @@ import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.vocabulary.RDFS;
 //import com.ibm.adtech.jastor.JastorContext;
 
+@SuppressWarnings("rawtypes")
 public class Util {
 
 	public static String printProperties(Resource res) {
@@ -35,6 +36,7 @@ public class Util {
 		return buf.toString();
 	}
 	
+	@SuppressWarnings("unchecked")
 	public static List iteratorToList(Iterator it) {
 		ArrayList list = new ArrayList();
 		while (it.hasNext()) {

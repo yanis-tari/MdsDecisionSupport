@@ -23,6 +23,7 @@ import com.ibm.adtech.jastor.Thing;
  * @author Ben Szekely (<a href="mailto:bhszekel@us.ibm.com">bhszekel@us.ibm.com</a>)
  *
  */
+@SuppressWarnings("rawtypes")
 public class CachedPropertyIterator implements Iterator {
     public static final String copyright = "(C) Copyright IBM Corporation 2005  All Rights Reserved.";
     
