@@ -13,7 +13,9 @@ public class ThingFactory {
     
 	public static final String copyright = "(C) Copyright IBM Corporation 2005  All Rights Reserved.";
 	
+	@SuppressWarnings("rawtypes")
 	protected static HashMap objects = new HashMap();
+	@SuppressWarnings("rawtypes")
 	protected static HashMap listeners = new HashMap();
 
 	public static Thing createThing(Resource resource, Model model) throws JastorException {
@@ -43,6 +45,7 @@ public class ThingFactory {
 	 * Clear the property caches of the individual objects cached in this factory.
 	 * @param type if not null, clear caches of objects of this type only
 	 */
+	@SuppressWarnings("rawtypes")
 	public static void clearCaches(Class type) {
 	    Iterator it = objects.entrySet().iterator();
 	    while (it.hasNext()) {

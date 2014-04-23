@@ -7,7 +7,6 @@ import com.hp.hpl.jena.datatypes.xsd.*;
 import com.hp.hpl.jena.datatypes.xsd.impl.*;
 */
 import com.hp.hpl.jena.rdf.model.*;
-import com.hp.hpl.jena.rdf.listeners.StatementListener;
 import com.hp.hpl.jena.vocabulary.RDF;
 import com.ibm.adtech.jastor.*;
 import com.ibm.adtech.jastor.util.*;
@@ -23,27 +22,35 @@ public class AssessmentImpl extends com.ibm.adtech.jastor.ThingImpl implements c
 	
 
 	private static com.hp.hpl.jena.rdf.model.Property hasGeographicalLocationProperty = ResourceFactory.createProperty("http://ontology/mds#hasGeographicalLocation");
+	@SuppressWarnings("rawtypes")
 	private java.util.ArrayList hasGeographicalLocation;
 	private static com.hp.hpl.jena.rdf.model.Property endDateOfMedicalItemProperty = ResourceFactory.createProperty("http://ontology/mds#endDateOfMedicalItem");
 	private com.hp.hpl.jena.datatypes.xsd.XSDDateTime endDateOfMedicalItem;
 	private static com.hp.hpl.jena.rdf.model.Property hasSourceProperty = ResourceFactory.createProperty("http://ontology/mds#hasSource");
+	@SuppressWarnings("rawtypes")
 	private java.util.ArrayList hasSource_asNaturalPerson;
+	@SuppressWarnings("rawtypes")
 	private java.util.ArrayList hasSource_asSensingDevice;
 	private static com.hp.hpl.jena.rdf.model.Property startDateOfMedicalItemProperty = ResourceFactory.createProperty("http://ontology/mds#startDateOfMedicalItem");
 	private com.hp.hpl.jena.datatypes.xsd.XSDDateTime startDateOfMedicalItem;
 	private static com.hp.hpl.jena.rdf.model.Property hasEffectTimeProperty = ResourceFactory.createProperty("http://ontology/mds#hasEffectTime");
 	private com.hp.hpl.jena.datatypes.xsd.XSDDateTime hasEffectTime;
 	private static com.hp.hpl.jena.rdf.model.Property hasNomenclatureCodeProperty = ResourceFactory.createProperty("http://ontology/mds#hasNomenclatureCode");
+	@SuppressWarnings("rawtypes")
 	private java.util.ArrayList hasNomenclatureCode;
 	private static com.hp.hpl.jena.rdf.model.Property isPartOfProperty = ResourceFactory.createProperty("http://ontology/mds#isPartOf");
+	@SuppressWarnings("rawtypes")
 	private java.util.ArrayList isPartOf;
 	private static com.hp.hpl.jena.rdf.model.Property hasMedicalObjectProperty = ResourceFactory.createProperty("http://ontology/mds#hasMedicalObject");
+	@SuppressWarnings("rawtypes")
 	private java.util.ArrayList hasMedicalObject;
 	private static com.hp.hpl.jena.rdf.model.Property hasContextProperty = ResourceFactory.createProperty("http://ontology/mds#hasContext");
+	@SuppressWarnings("rawtypes")
 	private java.util.ArrayList hasContext;
 	private static com.hp.hpl.jena.rdf.model.Property commentOfMedicalItemProperty = ResourceFactory.createProperty("http://ontology/mds#commentOfMedicalItem");
 	private java.lang.String commentOfMedicalItem;
 	private static com.hp.hpl.jena.rdf.model.Property hasAmountProperty = ResourceFactory.createProperty("http://ontology/mds#hasAmount");
+	@SuppressWarnings("rawtypes")
 	private java.util.ArrayList hasAmount;
 	private static com.hp.hpl.jena.rdf.model.Property hasTimeStampProperty = ResourceFactory.createProperty("http://ontology/mds#hasTimeStamp");
 	private com.hp.hpl.jena.datatypes.xsd.XSDDateTime hasTimeStamp;
@@ -76,11 +83,13 @@ public class AssessmentImpl extends com.ibm.adtech.jastor.ThingImpl implements c
 	void addHasValueValues() {
 	}
     
-    private void setupModelListener() {
+    @SuppressWarnings("rawtypes")
+	private void setupModelListener() {
     	listeners = new java.util.ArrayList();
     	com.mds.decisionsupport.model.MdsFactory.registerThing(this);
     }
 
+	@SuppressWarnings("rawtypes")
 	public java.util.List listStatements() {
 		java.util.List list = new java.util.ArrayList();
 		StmtIterator it = null;

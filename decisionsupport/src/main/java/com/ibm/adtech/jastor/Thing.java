@@ -20,6 +20,7 @@ public interface Thing {
     
 	public Model model();
 	
+	@SuppressWarnings("rawtypes")
 	public List listStatements();
 	
 	public void removeStatements();

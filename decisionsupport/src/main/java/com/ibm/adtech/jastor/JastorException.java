@@ -3,6 +3,11 @@ package com.ibm.adtech.jastor;
 public class JastorException extends RuntimeException {
     	
 	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/**
      * Exception that caused this Exception to be created and thrown
      */
 	private Exception originalException = null;

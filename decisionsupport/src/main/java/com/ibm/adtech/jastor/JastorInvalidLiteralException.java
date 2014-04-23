@@ -4,7 +4,11 @@ import com.hp.hpl.jena.rdf.model.Literal;
 
 public class JastorInvalidLiteralException extends JastorException {	
 	
-    Literal literal;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	Literal literal;
     public JastorInvalidLiteralException(
         Exception e,
         int errorCode,

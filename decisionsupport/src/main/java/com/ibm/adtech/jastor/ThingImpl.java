@@ -43,11 +43,13 @@ public class ThingImpl extends StatementListener implements Thing  {
         return _resource;
     }
     
-    public List listStatements() {
+    @SuppressWarnings({ "rawtypes" })
+	public List listStatements() {
         return new ArrayList();
     }
     
-    public void removeStatements() {
+    @SuppressWarnings("unchecked")
+	public void removeStatements() {
         _model.remove(listStatements());
     }
     
@@ -67,6 +69,7 @@ public class ThingImpl extends StatementListener implements Thing  {
 	    return _model.contains(_resource,RDF.type,type);
 	}
 	
+	@SuppressWarnings("unchecked")
 	public String toString () {
     	Model m = ModelFactory.createDefaultModel();
     	m.add(listStatements());

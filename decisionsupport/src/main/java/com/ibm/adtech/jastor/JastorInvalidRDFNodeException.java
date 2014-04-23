@@ -5,7 +5,11 @@ import com.hp.hpl.jena.rdf.model.RDFNode;
 
 public class JastorInvalidRDFNodeException extends JastorException {	
 	
-    RDFNode object;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	RDFNode object;
 	public JastorInvalidRDFNodeException(
 		Exception e,
 		int errorCode,

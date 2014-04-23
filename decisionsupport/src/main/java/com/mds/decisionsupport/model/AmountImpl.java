@@ -2,12 +2,7 @@
 
 package com.mds.decisionsupport.model;
 
-/*
-import com.hp.hpl.jena.datatypes.xsd.*;
-import com.hp.hpl.jena.datatypes.xsd.impl.*;
-*/
 import com.hp.hpl.jena.rdf.model.*;
-import com.hp.hpl.jena.rdf.listeners.StatementListener;
 import com.hp.hpl.jena.vocabulary.RDF;
 import com.ibm.adtech.jastor.*;
 import com.ibm.adtech.jastor.util.*;
@@ -55,11 +50,13 @@ public class AmountImpl extends com.ibm.adtech.jastor.ThingImpl implements com.m
 	void addHasValueValues() {
 	}
     
-    private void setupModelListener() {
+    @SuppressWarnings("rawtypes")
+	private void setupModelListener() {
     	listeners = new java.util.ArrayList();
     	com.mds.decisionsupport.model.MdsFactory.registerThing(this);
     }
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public java.util.List listStatements() {
 		java.util.List list = new java.util.ArrayList();
 		StmtIterator it = null;
@@ -166,8 +163,10 @@ public class AmountImpl extends com.ibm.adtech.jastor.ThingImpl implements com.m
  
 
 
+	@SuppressWarnings("rawtypes")
 	private java.util.ArrayList listeners;
 	
+	@SuppressWarnings("unchecked")
 	public void registerListener(ThingListener listener) {
 		if (!(listener instanceof AmountListener))
 			throw new IllegalArgumentException("ThingListener must be instance of AmountListener"); 
@@ -191,6 +190,7 @@ public class AmountImpl extends com.ibm.adtech.jastor.ThingImpl implements com.m
 
 
 	
+		@SuppressWarnings("rawtypes")
 		public void addedStatement(com.hp.hpl.jena.rdf.model.Statement stmt) {
 
 			if (stmt.getPredicate().equals(hasConfidenceProperty)) {
@@ -246,6 +246,7 @@ public class AmountImpl extends com.ibm.adtech.jastor.ThingImpl implements com.m
 			}
 		}
 		
+		@SuppressWarnings("rawtypes")
 		public void removedStatement(com.hp.hpl.jena.rdf.model.Statement stmt) {
 //			if (!stmt.getSubject().equals(_resource))
 //				return;
