@@ -7,10 +7,8 @@ import com.hp.hpl.jena.datatypes.xsd.*;
 import com.hp.hpl.jena.datatypes.xsd.impl.*;
 */
 import com.hp.hpl.jena.rdf.model.*;
-import com.hp.hpl.jena.rdf.listeners.StatementListener;
 import com.hp.hpl.jena.vocabulary.RDF;
 import com.ibm.adtech.jastor.*;
-import com.ibm.adtech.jastor.util.*;
 
 
 /**
@@ -19,6 +17,7 @@ import com.ibm.adtech.jastor.util.*;
  * <p>(URI: http://ontology/mds#CompositionOfMedicalItems)</p>
  * <br>
  */
+@SuppressWarnings({ "rawtypes", "unchecked" })
 public class CompositionOfMedicalItemsImpl extends com.ibm.adtech.jastor.ThingImpl implements com.mds.decisionsupport.model.CompositionOfMedicalItems {
 	
 
@@ -74,6 +73,7 @@ public class CompositionOfMedicalItemsImpl extends com.ibm.adtech.jastor.ThingIm
 		hasMedicalItemsRegrouped = null;
 	}
 
+	@SuppressWarnings("unused")
 	private com.hp.hpl.jena.rdf.model.Literal createLiteral(Object obj) {
 		return _model.createTypedLiteral(obj);
 	}

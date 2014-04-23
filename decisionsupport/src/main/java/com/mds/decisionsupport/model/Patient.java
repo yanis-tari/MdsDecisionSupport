@@ -14,6 +14,7 @@ import com.hp.hpl.jena.rdf.model.*;
  * <br>
  * <br>
  */
+@SuppressWarnings({ "rawtypes" })
 public interface Patient extends com.mds.decisionsupport.model.NaturalPerson, com.ibm.adtech.jastor.Thing {
 	
 	/**

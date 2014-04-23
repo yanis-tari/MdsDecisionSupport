@@ -7,10 +7,9 @@ import com.hp.hpl.jena.datatypes.xsd.*;
 import com.hp.hpl.jena.datatypes.xsd.impl.*;
 */
 import com.hp.hpl.jena.rdf.model.*;
-import com.hp.hpl.jena.rdf.listeners.StatementListener;
 import com.hp.hpl.jena.vocabulary.RDF;
 import com.ibm.adtech.jastor.*;
-import com.ibm.adtech.jastor.util.*;
+
 
 
 /**
@@ -19,6 +18,7 @@ import com.ibm.adtech.jastor.util.*;
  * <p>(URI: http://ontology/mds#SensingDevice)</p>
  * <br>
  */
+@SuppressWarnings({ "rawtypes", "unchecked" })
 public class SensingDeviceImpl extends com.ibm.adtech.jastor.ThingImpl implements com.mds.decisionsupport.model.SensingDevice {
 	
 
@@ -67,6 +67,7 @@ public class SensingDeviceImpl extends com.ibm.adtech.jastor.ThingImpl implement
 	public void clearCache() {
 	}
 
+	@SuppressWarnings("unused")
 	private com.hp.hpl.jena.rdf.model.Literal createLiteral(Object obj) {
 		return _model.createTypedLiteral(obj);
 	}

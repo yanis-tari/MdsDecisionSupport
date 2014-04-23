@@ -18,6 +18,8 @@ import com.hp.hpl.jena.vocabulary.RDF;
  * <br>
  * <br>
  */
+
+@SuppressWarnings({ "rawtypes", "unchecked" })
 public class MdsFactory extends com.ibm.adtech.jastor.ThingFactory { 
 
 

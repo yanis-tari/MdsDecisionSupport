@@ -14,6 +14,7 @@ import com.hp.hpl.jena.rdf.model.*;
  * <br>
  * <br>
  */
+@SuppressWarnings({ "rawtypes" })
 public interface MedicalRecord extends com.ibm.adtech.jastor.Thing {
 	
 	/**

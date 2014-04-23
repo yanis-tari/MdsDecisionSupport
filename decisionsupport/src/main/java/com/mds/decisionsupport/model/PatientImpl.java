@@ -3,11 +3,12 @@
 package com.mds.decisionsupport.model;
 
 /*
+
 import com.hp.hpl.jena.datatypes.xsd.*;
 import com.hp.hpl.jena.datatypes.xsd.impl.*;
 */
+
 import com.hp.hpl.jena.rdf.model.*;
-import com.hp.hpl.jena.rdf.listeners.StatementListener;
 import com.hp.hpl.jena.vocabulary.RDF;
 import com.ibm.adtech.jastor.*;
 import com.ibm.adtech.jastor.util.*;
@@ -19,6 +20,7 @@ import com.ibm.adtech.jastor.util.*;
  * <p>(URI: http://ontology/mds#Patient)</p>
  * <br>
  */
+@SuppressWarnings({ "rawtypes", "unchecked" })
 public class PatientImpl extends com.ibm.adtech.jastor.ThingImpl implements com.mds.decisionsupport.model.Patient {
 	
 
