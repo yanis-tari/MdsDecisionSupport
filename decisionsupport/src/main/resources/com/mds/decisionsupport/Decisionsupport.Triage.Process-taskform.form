@@ -4,47 +4,4 @@
 <property name="name" value="Decisionsupport.Triage.Process-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="5" name="patient_phoneNumber" type="InputText" id="1759380592">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;phoneNumber (patient)quot;"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/phoneNumber"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="1" name="patient_birthDate" type="Subform" id="910543740">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;birthDate (patient)quot;"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/birthDate"/>
-<property name="fieldClass" value="java.lang.Object"/>
-</field>
-<field position="4" name="patient_lastName" type="InputText" id="473776806">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;lastName (patient)quot;"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/lastName"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="3" name="patient_firstName" type="InputText" id="1585225231">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;firstName (patient)quot;"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/firstName"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="2" name="patient_email" type="InputText" id="1173825906">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;email (patient)quot;"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/email"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="0" name="patient_adress" type="InputTextBigInteger" id="81084624">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;adress (patient)quot;"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/adress"/>
-<property name="fieldClass" value="java.math.BigInteger"/>
-</field>
-<dataHolder name="#0000A0" type="dataModelerEntry" outId="patient" value="com.mds.decisionsupport.model.PatientImpl" id="patient"/>
 </form>
