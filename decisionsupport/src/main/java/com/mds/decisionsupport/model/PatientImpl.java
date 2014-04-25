@@ -24,6 +24,10 @@ import com.ibm.adtech.jastor.util.*;
 public class PatientImpl extends com.ibm.adtech.jastor.ThingImpl implements com.mds.decisionsupport.model.Patient, java.io.Serializable {
 	
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private static com.hp.hpl.jena.rdf.model.Property lastNameProperty = ResourceFactory.createProperty("http://ontology/mds#lastName");
 	private java.lang.String lastName;
 	private static com.hp.hpl.jena.rdf.model.Property birthDateProperty = ResourceFactory.createProperty("http://ontology/mds#birthDate");
