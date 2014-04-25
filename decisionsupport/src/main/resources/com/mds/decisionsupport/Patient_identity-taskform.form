@@ -1,0 +1,50 @@
+
+<form id="1788723685">
+<property name="subject" value=""/>
+<property name="name" value="Patient_identity-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="2" name="patient_email" type="InputText" id="1048590585">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;email (patient)quot;"/>
+<property name="inputBinding" value="patient_in/email"/>
+<property name="outputBinding" value="patient_out/email"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="5" name="patient_phoneNumber" type="InputText" id="329174619">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;phoneNumber (patient)quot;"/>
+<property name="inputBinding" value="patient_in/phoneNumber"/>
+<property name="outputBinding" value="patient_out/phoneNumber"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="patient_firstName" type="InputText" id="814708051">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;firstName (patient)quot;"/>
+<property name="inputBinding" value="patient_in/firstName"/>
+<property name="outputBinding" value="patient_out/firstName"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="patient_adress" type="InputTextBigInteger" id="438647199">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;adress (patient)quot;"/>
+<property name="inputBinding" value="patient_in/adress"/>
+<property name="outputBinding" value="patient_out/adress"/>
+<property name="fieldClass" value="java.math.BigInteger"/>
+</field>
+<field position="4" name="patient_lastName" type="InputText" id="541072092">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;lastName (patient)quot;"/>
+<property name="inputBinding" value="patient_in/lastName"/>
+<property name="outputBinding" value="patient_out/lastName"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="patient_birthDate" type="Subform" id="1994725426">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;birthDate (patient)quot;"/>
+<property name="inputBinding" value="patient_in/birthDate"/>
+<property name="outputBinding" value="patient_out/birthDate"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
+<dataHolder inputId="patient_in" name="#0000A0" type="dataModelerEntry" outId="patient_out" value="com.mds.decisionsupport.model.PatientImpl" id="patient"/>
+</form>
